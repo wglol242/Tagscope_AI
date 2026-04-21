@@ -1,12 +1,12 @@
 # 🏷️ Tagscope AI
 
-### AI 기반 의미·맥락 검색을 지원하는 지능형 북마크 탐색 시스템
+### AI를 활용한 북마크 자동 분류 및 지능형 탐색 시스템
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/36c2cae7-dbc7-406a-90b4-c2915ca7eca3" width="700"/>
 </p>
 
-> **AI 사피엔스 경진대회 최우수상 수상 프로젝트**
+> **AI 사피엔스 경진대회 최우수상 수상**
 
 ---
 
@@ -14,13 +14,11 @@
 
 | 항목 | 내용 |
 |------|------|
-| **프로젝트명** | Tagscope AI |
-| **개발 기간** | 2025.06 ~ 2025.09 |
-| **프로젝트 유형** | 웹 서비스 / 크롬 확장 프로그램 / AI 검색 시스템 |
-| **개발 인원** | 2명 |
-| **역할** | 백엔드 개발, AI 기능 구현, 검색 로직 설계 |
-| **기술 스택** | Python, FastAPI, React, PostgreSQL, pgvector, Docker, Gemini API |
-| **핵심 성과** | 의미 기반 북마크 검색 시스템 구현 및 AI 사피엔스 경진대회 최우수상 수상 |
+| **기간** | 2025.06 ~ 2025.09 |
+| **작업 인원** | 2명 |
+| **역할** | 백엔드 담당, 기술 구현 |
+| **기술 스택** | Python, Docker, Gemini API |
+| **성과** | AI 자동 태깅, 멀티 벡터 검색, 하이브리드 검색, LLM 리랭킹을 결합한 지능형 북마크 탐색 시스템 구현 |
 
 ---
 
@@ -39,7 +37,7 @@
 - 정확한 문서 검색과 유사 카테고리 탐색을 동시에 지원
 
 ### 4) AI 리랭킹
-- 고급 검색 옵션 활성화 시 LLM이 1차 검색 결과를 재정렬
+- 고급 검색 옵션 활성화 시 LLM이 1차 검색 결과를 연관도에 따라 재정렬
 - 사용자의 검색 의도와 문맥에 더 적합한 결과를 상위에 배치
 
 ---
@@ -127,22 +125,7 @@
 
 ---
 
-## 5. 동작 흐름
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fc8644f5-67b8-40e9-870a-14df62589ab8" width="700"/>
-</p>
-
-
-1. 사용자가 Chrome 확장 프로그램 또는 웹앱에서 북마크 저장 요청  
-2. FastAPI 서버가 URL 및 제목 정보를 수집  
-3. AI 모델이 요약, 태그, 카테고리를 생성  
-4. 임베딩 벡터와 함께 PostgreSQL에 저장  
-5. 검색 시 키워드 검색 + 시맨틱 검색 + 리랭킹을 통해 결과 제공  
-
----
-
-## 6. 실제 결과물 / 발표 자료 / 시연 영상
+## 5. 실제 결과물 / 시연 영상 / 발표 자료
 
 ### 실제 화면
 <p align="center">
@@ -157,17 +140,17 @@
 
 ---
 
-## 7. 기술 스택
+## 6. 기술 스택
 
 - **Frontend**: React, Chrome Extension
 - **Backend**: Python, FastAPI
 - **Database**: PostgreSQL, pgvector
-- **AI / Search**: Gemini API, BM25, Multi Vector Search, LLM Reranking
+- **AI / Search**: Gemini API
 - **Environment**: Docker
 
 ---
 
-## 8. 프로젝트 요약
+## 7. 프로젝트 요약
 
 Tagscope AI는 단순 키워드 검색의 한계를 보완하기 위해,  
 **AI 자동 태깅**, **멀티 벡터 검색**, **하이브리드 검색**, **LLM 리랭킹**을 결합한 지능형 북마크 탐색 시스템입니다.
